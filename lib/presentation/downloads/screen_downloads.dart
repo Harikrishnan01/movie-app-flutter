@@ -77,13 +77,13 @@ class ScreenDownload extends StatelessWidget {
           Container(
               width: MediaQuery.of(context).size.width,
               height: MediaQuery.of(context).size.height,
-              color: Colors.white,
+              color: Colors.black,
               child: Stack(
                 alignment: Alignment.center,
                 children: [
                   CircleAvatar(
                     radius: 190,
-                    backgroundColor: Colors.blue,
+                    backgroundColor: Colors.grey.withOpacity(0.4),
                   ),
                   Transform.rotate(
                     angle: 15 * pi / 180,
@@ -93,7 +93,9 @@ class ScreenDownload extends StatelessWidget {
                         width: 200,
                         height: 230,
                         decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(10),
                             image: DecorationImage(
+                                fit: BoxFit.cover,
                                 image:
                                     AssetImage('asset/images/cinema1.jpeg'))),
                       ),
@@ -107,7 +109,9 @@ class ScreenDownload extends StatelessWidget {
                         width: 220,
                         height: 240,
                         decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(10),
                             image: DecorationImage(
+                                fit: BoxFit.cover,
                                 image:
                                     AssetImage('asset/images/cinema2.jpeg'))),
                       ),
@@ -121,7 +125,9 @@ class ScreenDownload extends StatelessWidget {
                         width: 280,
                         height: 290,
                         decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(10),
                             image: DecorationImage(
+                                fit: BoxFit.cover,
                                 image:
                                     AssetImage('asset/images/cinema3.jpeg'))),
                       ),
@@ -129,10 +135,15 @@ class ScreenDownload extends StatelessWidget {
                   )
                 ],
               )),
+          SizedBox(
+            height: 50,
+          ),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               MaterialButton(
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(5)),
                   color: Colors.blue,
                   onPressed: () {},
                   child: Text(
@@ -151,6 +162,8 @@ class ScreenDownload extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               MaterialButton(
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(5)),
                   color: Colors.white,
                   onPressed: () {},
                   child: Text(
