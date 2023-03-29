@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:movieproj/presentation/downloads/screen_downloads.dart';
+import 'package:movieproj/presentation/home/screen_homepage.dart';
 
 import 'package:movieproj/presentation/home/screen_mainpage.dart';
 import 'package:movieproj/presentation/search/screen_idle.dart';
@@ -21,7 +22,7 @@ class hari extends StatelessWidget {
           textTheme: TextTheme(
               bodyText1: TextStyle(color: Colors.white),
               bodyText2: TextStyle(color: Colors.white))),
-      home: ScreenIdle(),
+      home: MainPage(),
     );
   }
 }

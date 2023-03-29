@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:movieproj/presentation/search/screen_idle.dart';
 
 class ScreenSearch extends StatelessWidget {
   const ScreenSearch({super.key});
@@ -6,7 +7,7 @@ class ScreenSearch extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SafeArea(child: Center(child: Text('Search Page'))),
+      body: ScreenIdle(),
     );
   }
 }
