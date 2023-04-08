@@ -26,12 +26,15 @@ class NumberCard extends StatelessWidget {
         ),
         Positioned(
           left: 10,
-          bottom: 10,
+          bottom: -20,
           child: BorderedText(
             strokeWidth: 10.0,
+            strokeColor: Colors.white,
             child: Text(
               '${index + 1}',
               style: TextStyle(
+                color: Colors.black,
+                fontWeight: FontWeight.bold,
                 fontSize: 100,
                 decoration: TextDecoration.none,
                 decorationColor: Colors.red,
